@@ -1,0 +1,51 @@
+.main-wrap {
+	width: 100%;
+	min-height: 100vh;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.inputs-wrap {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 5px;
+}
+.text-to-traslate-wrap {
+	width: 100%;
+}
+.translated-text-wrap {
+	width: 100%;
+	position: relative;
+}
+
+.select-wrap {
+	width: 30%;
+	align-self: flex-end;
+}
+.list-of-results-wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.main-wrap {
+		padding: 20px 10px;
+	}
+	.inputs-wrap {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.select-wrap {
+		width: 100%;
+	}
+	.MuiInput-underline:before,
+	.MuiInput-underline:after,
+	.MuiInput-underline:hover:not(.Mui-disabled):before {
+		border: none !important;
+	}
+}
